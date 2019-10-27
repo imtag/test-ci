@@ -1,0 +1,22 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+	ignorecase = true
+	precomposeunicode = true
+[user]
+	name = sankincn
+	email = tfx919@163.com
+[remote "sankincn"]
+	url = git@github.com:sankincn/test-ci.git
+	fetch = +refs/heads/*:refs/remotes/sankincn/*
+[remote "test-ci"]
+	url = git@github.com:sankincn/test-ci.git
+	fetch = +refs/heads/*:refs/remotes/test-ci/*
+[remote "origin"]
+	url = git@github.com:sankincn/test-ci.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
